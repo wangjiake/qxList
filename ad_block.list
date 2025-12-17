@@ -68,3 +68,11 @@ HOST-KEYWORD,adtrack,REJECT
 HOST-KEYWORD,adx,REJECT
 HOST-KEYWORD,bid-feedback,REJECT
 HOST-KEYWORD,impression,REJECT
+
+# ===== 新增广告域名 2024-12-17 =====
+# 7ad.org 广告平台
+HOST-SUFFIX,7ad.org,REJECT
+
+# Adform 广告网络
+HOST,a1.adform.net,REJECT
+HOST-SUFFIX,adform.net,REJECT

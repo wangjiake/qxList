@@ -1,0 +1,70 @@
+# 我的广告屏蔽规则
+# 更新日期：2024-12-17
+
+# ===== Liftoff 广告平台 =====
+HOST,adexp.liftoff.io,REJECT
+HOST,cdn.liftoff-creatives.io,REJECT
+HOST,click.liftoff.io,REJECT
+HOST,impression-asia.liftoff.io,REJECT
+HOST,impression-east.liftoff.io,REJECT
+HOST-SUFFIX,liftoff.io,REJECT
+
+# ===== Vungle 广告平台 =====
+HOST,cdn-lb.vungle.com,REJECT
+HOST,events.ads.vungle.com,REJECT
+HOST,logs.ads.vungle.com,REJECT
+HOST-SUFFIX,ads.vungle.com,REJECT
+
+# ===== Mosspf/Mossru 广告平台 =====
+HOST,adx.mosspf.net,REJECT
+HOST,api.mosspf.net,REJECT
+HOST,da.mosspf.net,REJECT
+HOST,tk.mosspf.net,REJECT
+HOST,api.mossru.com,REJECT
+HOST,da.mossru.com,REJECT
+HOST,tk.mossru.com,REJECT
+HOST-SUFFIX,mosspf.net,REJECT
+HOST-SUFFIX,mossru.com,REJECT
+
+# ===== MTG/Mintegral 广告平台 =====
+HOST,sg-gcp-ad-track-sdk-asia-southeast1-c.mtgglobals.com,REJECT
+HOST,sg-new-cdn-asia-southeast1-c-hb-bid-feedback.mtgglobals.com,REJECT
+HOST,sg-new-cdn-ssplib-asia-southeast1-c-hb.mtgglobals.com,REJECT
+HOST-KEYWORD,mtgglobals,REJECT
+
+# ===== TikTok Pangle =====
+HOST,api16-access-ttp.tiktokpangle.us,REJECT
+HOST,sf16-static.i18n-pglstatp.com,REJECT
+HOST,sf19-static.i18n-pglstatp.com,REJECT
+HOST-KEYWORD,tiktokpangle,REJECT
+HOST-KEYWORD,pglstatp,REJECT
+
+# ===== Antibanads 广告平台 =====
+HOST,api.antibanads.com,REJECT
+HOST-KEYWORD,antibanads,REJECT
+
+# ===== 其他广告平台 =====
+HOST,api.youngle.site,REJECT
+HOST,cr.adsappier.com,REJECT
+HOST,tr.acobt.tech,REJECT
+HOST,api.onegg.site,REJECT
+HOST-KEYWORD,adsappier,REJECT
+HOST-KEYWORD,youngle,REJECT
+
+# ===== Google/Facebook 广告 =====
+HOST,ep7.facebook.com,REJECT
+HOST,fundingchoicesmessages.google.com,REJECT
+
+# ===== 69shuba 游戏广告 =====
+HOST-SUFFIX,69game.biz,REJECT
+HOST-KEYWORD,gameads,REJECT
+HOST-SUFFIX,ariososlepage.com,REJECT
+HOST-SUFFIX,topworkredbay.shop,REJECT
+HOST-SUFFIX,dipppyruiners.top,REJECT
+HOST-SUFFIX,vidiconmaskers.shop,REJECT
+
+# ===== 通用广告关键词 =====
+HOST-KEYWORD,adtrack,REJECT
+HOST-KEYWORD,adx,REJECT
+HOST-KEYWORD,bid-feedback,REJECT
+HOST-KEYWORD,impression,REJECT

@@ -77,17 +77,17 @@ HOST-SUFFIX,7ad.org,REJECT
 HOST,a1.adform.net,REJECT
 HOST-SUFFIX,adform.net,REJECT
 
-# ===== PubFuture 广告平台 =====
+# PubFuture 广告平台
 HOST-SUFFIX,pubfuture-ad.com,REJECT
 HOST,cdn.pubfuture-ad.com,REJECT
 HOST,ip2geo.pubfuture-ad.com,REJECT
 
-# ===== AdFlyCode 广告追踪 =====
+# AdFlyCode 广告追踪
 HOST-SUFFIX,adflycode.com,REJECT
 
-# ===== Cashooshut 广告网络 =====
+# Cashooshut 广告网络
 HOST-SUFFIX,cashooshut.com,REJECT
 
-# ===== 可疑广告域名 =====
+# 可疑广告域名
 HOST-SUFFIX,tacitmsl.shop,REJECT
 HOST-SUFFIX,oxacidloaves.help,REJECT

@@ -91,3 +91,27 @@ HOST-SUFFIX,cashooshut.com,REJECT
 # 可疑广告域名
 HOST-SUFFIX,tacitmsl.shop,REJECT
 HOST-SUFFIX,oxacidloaves.help,REJECT
+
+# 广告服务器
+HOST-SUFFIX,pubfuture-ad.com,REJECT
+HOST-SUFFIX,pubfuture.com,REJECT
+HOST-SUFFIX,magsrv.com,REJECT
+HOST-SUFFIX,adflycode.com,REJECT
+HOST-SUFFIX,pubadx.one,REJECT
+HOST-SUFFIX,adxbid.info,REJECT
+HOST-SUFFIX,cashooshut.com,REJECT
+HOST-SUFFIX,7ad.org,REJECT
+HOST-SUFFIX,oxacidloaves.help,REJECT
+
+# 可疑域名
+HOST-SUFFIX,tacitmsl.shop,REJECT
+HOST-SUFFIX,topworkredbay.shop,REJECT
+
+# Google追踪
+HOST-SUFFIX,googletagmanager.com,REJECT
+HOST-SUFFIX,google-analytics.com,REJECT
+
+# 小说站及其CDN
+
+HOST-SUFFIX,cdnpf.com,REJECT
+

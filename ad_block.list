@@ -1,28 +1,16 @@
 # 我的广告屏蔽规则
-# 更新日期：2024-12-17
+# 更新日期：2024-12-17 (已去重优化)
 
 # ===== Liftoff 广告平台 =====
-HOST,adexp.liftoff.io,REJECT
+# 说明：SUFFIX已覆盖主要子域名，保留不同后缀的域名
 HOST,cdn.liftoff-creatives.io,REJECT
-HOST,click.liftoff.io,REJECT
-HOST,impression-asia.liftoff.io,REJECT
-HOST,impression-east.liftoff.io,REJECT
 HOST-SUFFIX,liftoff.io,REJECT
 
 # ===== Vungle 广告平台 =====
 HOST,cdn-lb.vungle.com,REJECT
-HOST,events.ads.vungle.com,REJECT
-HOST,logs.ads.vungle.com,REJECT
 HOST-SUFFIX,ads.vungle.com,REJECT
 
 # ===== Mosspf/Mossru 广告平台 =====
-HOST,adx.mosspf.net,REJECT
-HOST,api.mosspf.net,REJECT
-HOST,da.mosspf.net,REJECT
-HOST,tk.mosspf.net,REJECT
-HOST,api.mossru.com,REJECT
-HOST,da.mossru.com,REJECT
-HOST,tk.mossru.com,REJECT
 HOST-SUFFIX,mosspf.net,REJECT
 HOST-SUFFIX,mossru.com,REJECT
 
@@ -55,13 +43,16 @@ HOST-KEYWORD,youngle,REJECT
 HOST,ep7.facebook.com,REJECT
 HOST,fundingchoicesmessages.google.com,REJECT
 
-# ===== 69shuba 游戏广告 =====
+# ===== 69shuba 及小说站游戏广告 =====
 HOST-SUFFIX,69game.biz,REJECT
 HOST-KEYWORD,gameads,REJECT
 HOST-SUFFIX,ariososlepage.com,REJECT
 HOST-SUFFIX,topworkredbay.shop,REJECT
 HOST-SUFFIX,dipppyruiners.top,REJECT
 HOST-SUFFIX,vidiconmaskers.shop,REJECT
+HOST-SUFFIX,tacitmsl.shop,REJECT
+HOST-SUFFIX,oxacidloaves.help,REJECT
+HOST-SUFFIX,cdnpf.com,REJECT
 
 # ===== 通用广告关键词 =====
 HOST-KEYWORD,adtrack,REJECT
@@ -69,49 +60,29 @@ HOST-KEYWORD,adx,REJECT
 HOST-KEYWORD,bid-feedback,REJECT
 HOST-KEYWORD,impression,REJECT
 
-# ===== 新增广告域名 2024-12-17 =====
-# 7ad.org 广告平台
+# ===== 2024-12-17 新增/整理广告域名 =====
+# 7ad.org
 HOST-SUFFIX,7ad.org,REJECT
 
-# Adform 广告网络
+# Adform
 HOST,a1.adform.net,REJECT
 HOST-SUFFIX,adform.net,REJECT
 
-# PubFuture 广告平台
-HOST-SUFFIX,pubfuture-ad.com,REJECT
-HOST,cdn.pubfuture-ad.com,REJECT
-HOST,ip2geo.pubfuture-ad.com,REJECT
-
-# AdFlyCode 广告追踪
-HOST-SUFFIX,adflycode.com,REJECT
-
-# Cashooshut 广告网络
-HOST-SUFFIX,cashooshut.com,REJECT
-
-# 可疑广告域名
-HOST-SUFFIX,tacitmsl.shop,REJECT
-HOST-SUFFIX,oxacidloaves.help,REJECT
-
-# 广告服务器
+# PubFuture (SUFFIX覆盖了cdn和ip2geo)
 HOST-SUFFIX,pubfuture-ad.com,REJECT
 HOST-SUFFIX,pubfuture.com,REJECT
-HOST-SUFFIX,magsrv.com,REJECT
+
+# AdFlyCode
 HOST-SUFFIX,adflycode.com,REJECT
+
+# Cashooshut
+HOST-SUFFIX,cashooshut.com,REJECT
+
+# 其他广告服务器
+HOST-SUFFIX,magsrv.com,REJECT
 HOST-SUFFIX,pubadx.one,REJECT
 HOST-SUFFIX,adxbid.info,REJECT
-HOST-SUFFIX,cashooshut.com,REJECT
-HOST-SUFFIX,7ad.org,REJECT
-HOST-SUFFIX,oxacidloaves.help,REJECT
 
-# 可疑域名
-HOST-SUFFIX,tacitmsl.shop,REJECT
-HOST-SUFFIX,topworkredbay.shop,REJECT
-
-# Google追踪
+# Google追踪 (注意：可能影响部分网站统计功能)
 HOST-SUFFIX,googletagmanager.com,REJECT
 HOST-SUFFIX,google-analytics.com,REJECT
-
-# 小说站及其CDN
-
-HOST-SUFFIX,cdnpf.com,REJECT
-

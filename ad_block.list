@@ -86,3 +86,19 @@ HOST-SUFFIX,adxbid.info,REJECT
 # Google追踪 (注意：可能影响部分网站统计功能)
 HOST-SUFFIX,googletagmanager.com,REJECT
 HOST-SUFFIX,google-analytics.com,REJECT
+
+# ===== 2024-12-22 新增截图发现的广告 =====
+
+# A-Ads (匿名广告网络)
+HOST-SUFFIX, a-ads.com, REJECT
+HOST-SUFFIX, afcdn.net, REJECT
+
+# ID5 (身份追踪)
+HOST-SUFFIX, id5-sync.com, REJECT
+
+# ===== 之前的规则 (再次确认覆盖) =====
+# 截图里出现的这些，之前的规则已经包含，不用重复加，但要确保生效：
+HOST-SUFFIX, adxbid.info, REJECT
+HOST-SUFFIX, pubfuture-ad.com, REJECT
+HOST-SUFFIX, magsrv.com, REJECT
+HOST-SUFFIX, googletagmanager.com, REJECT

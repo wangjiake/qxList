@@ -102,3 +102,4 @@ HOST-SUFFIX, adxbid.info, REJECT
 HOST-SUFFIX, pubfuture-ad.com, REJECT
 HOST-SUFFIX, magsrv.com, REJECT
 HOST-SUFFIX, googletagmanager.com, REJECT
+HOST,tb-video.bdstatic.com,REJECT

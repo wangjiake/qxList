@@ -103,3 +103,9 @@ HOST-SUFFIX, pubfuture-ad.com, REJECT
 HOST-SUFFIX, magsrv.com, REJECT
 HOST-SUFFIX, googletagmanager.com, REJECT
 HOST,tb-video.bdstatic.com,REJECT
+
+# ===== 2026-05-20 新增 网易藏宝阁视频屏蔽 =====
+# 藏宝阁 App 角色展示视频 CDN
+HOST-SUFFIX,ali-video-cbg.cc.netease.com,REJECT
+# 藏宝阁广告配置接口（可选，屏蔽后 App 内不再请求广告配置）
+HOST,dc.cbg.163.com,REJECT

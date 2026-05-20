@@ -113,3 +113,8 @@ HOST-SUFFIX,vod.cc.163.com,REJECT
 HOST,dc.cbg.163.com,REJECT
 # 网易埋点上报
 HOST-SUFFIX,proxima.nie.netease.com,REJECT
+
+ # ===== 2026-05-20 升级 整个网易 CC 域封禁 =====
+  # 注意：会同时封掉网易 CC 直播 App / CC 弹幕 / cc.163.com 主站
+  HOST-SUFFIX,cc.163.com,REJECT
+  HOST-SUFFIX,cc.netease.com,REJECT

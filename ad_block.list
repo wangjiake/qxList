@@ -104,8 +104,12 @@ HOST-SUFFIX, magsrv.com, REJECT
 HOST-SUFFIX, googletagmanager.com, REJECT
 HOST,tb-video.bdstatic.com,REJECT
 
-# ===== 2026-05-20 新增 网易藏宝阁视频屏蔽 =====
-# 藏宝阁 App 角色展示视频 CDN
-HOST-SUFFIX,ali-video-cbg.cc.netease.com,REJECT
-# 藏宝阁广告配置接口（可选，屏蔽后 App 内不再请求广告配置）
+# ===== 2026-05-20 更新 网易视频/埋点屏蔽 =====
+# 网易视频 CDN（覆盖 ali-video、ali-video-cbg、ali-video-dashen 等所有变体）
+HOST-KEYWORD,ali-video,REJECT
+# 网易视频源站（302 跳转源）
+HOST-SUFFIX,vod.cc.163.com,REJECT
+# 网易藏宝阁广告配置
 HOST,dc.cbg.163.com,REJECT
+# 网易埋点上报
+HOST-SUFFIX,proxima.nie.netease.com,REJECT

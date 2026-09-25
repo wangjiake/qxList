@@ -121,3 +121,17 @@ HOST-SUFFIX,cc.netease.com,REJECT
 
 # 网易崩溃/日志上报
 HOST-SUFFIX,appdump.nie.netease.com,REJECT
+
+# ===== 2026-09-24 新增 88xiaoshuo 小说站漫画广告 =====
+# 广告注入脚本
+HOST-SUFFIX,c4jsrnirobpg.vip,REJECT
+# 广告跳转
+HOST-SUFFIX,qa2bdtwm7h.com,REJECT
+# 统计打点
+HOST-SUFFIX,4x387xf.com,REJECT
+# 广告图片
+HOST-SUFFIX,huiokcdn.com,REJECT
+# 漫画落地页（数字后缀会换，关键词兜底）
+HOST-KEYWORD,buzzeekmos,REJECT
+# 落地页静态资源
+HOST-SUFFIX,hclaow.cn,REJECT

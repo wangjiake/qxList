@@ -1,5 +1,5 @@
 # 我的广告屏蔽规则
-# 更新日期：2024-12-17 (已去重优化)
+# 更新日期：2026-11-26
 
 # ===== Liftoff 广告平台 =====
 # 说明：SUFFIX已覆盖主要子域名，保留不同后缀的域名
@@ -135,3 +135,18 @@ HOST-SUFFIX,huiokcdn.com,REJECT
 HOST-KEYWORD,buzzeekmos,REJECT
 # 落地页静态资源
 HOST-SUFFIX,hclaow.cn,REJECT
+
+# ===== 2026-11-26 新增 88xiaoshuo 跳黄站广告(只在手机上触发) =====
+# 说明：页面里另有一家广告的域名每 6 小时按日期换一次(DGA)，域名规则挡不住，
+#       要配合重写 88xiaoshuo.snippet 把广告脚本从页面里删掉，这里只是兜底
+# 点屏幕下方(下一页按钮区)就跳
+HOST-SUFFIX,4gl3gqz.com,REJECT
+# 每天随机一次打开页面 2 秒后自动跳
+HOST-SUFFIX,yuyu13.com,REJECT
+HOST-SUFFIX,ggbieda.com,REJECT
+# 滑到章节末尾跳转的黄站落地页
+HOST-SUFFIX,ystx5333.cc,REJECT
+HOST-SUFFIX,yesedns.com,REJECT
+# 广告图片素材
+HOST-SUFFIX,akosscdn.com,REJECT
+HOST,kcjioeidd-1325890192.cos.ap-shanghai.myqcloud.com,REJECT

@@ -1,0 +1,13 @@
+# 88小说网(m.88xiaoshuo.net) 去广告 / 防跳黄站 —— Quantumult X 重写
+# 更新日期：2026-11-26
+# 章节页内嵌 3 段加密广告脚本(只在手机上运行)，页面送到手机前直接删掉，域名怎么换都没用：
+#  ① 域名每 6 小时换的广告：滑到章节末尾直接跳黄站(ystx5333.cc → yinse.yesedns.com)
+#  ② 点屏幕下方约 1/3(下一页/下一章按钮区)就跳(4gl3gqz.com)
+#  ③ 每天一次约 20% 概率，打开页面 2 秒后自动跳(yuyu13.com)
+# 需要：QX 开启 MitM 与重写，并安装、信任 QX 证书
+
+hostname = m.88xiaoshuo.net, www.88xiaoshuo.net
+
+^https?:\/\/(m|www)\.88xiaoshuo\.net\/ url response-body <script\stype='text\/javascript'>\(\w+=\[null(?:,null){5}\].+?<\/script> response-body <!---->
+^https?:\/\/(m|www)\.88xiaoshuo\.net\/ url response-body <script\stype='text\/javascript'>!function\(\)\{function\sa\(a\)\{var\sb=\{.+?<\/script> response-body <!---->
+^https?:\/\/(m|www)\.88xiaoshuo\.net\/ url response-body <script\stype='text\/javascript'>function\s_0x\w+\(\)\{.+?<\/script> response-body <!---->
